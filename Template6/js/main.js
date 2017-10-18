@@ -23,7 +23,7 @@ var parseDate = d3.time.format("%Y-%m-%d").parse;
 // 	(3) Create new bar chart objects
 // 	(4) Create new are chart object
 
-d3.csv("data/household_characteristics.csv", function(allData){
+d3.csv("Template6/data/household_characteristics.csv", function(allData){
 	// console.log(allData);
 
 	// Store csv data in global variable

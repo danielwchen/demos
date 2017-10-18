@@ -1,0 +1,38 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    color: darkviolet;
+    font-style: normal;
+    font-weight: bold;
+}
+
+tr th {
+    background-color: black;
+    color: white;
+    font-style: normal;
+}
+
+.even {
+    background-color: #e1e1e1;
+}
+
+.odd {
+    background-color: white;
+}
+
+.country {
+    font-style: normal;
+    font-weight: bold;
+}
+
+table th, td{
+    padding: 5px;
+    border: 1px solid white;
+}
+
+p {
+    font-size: large;
+}

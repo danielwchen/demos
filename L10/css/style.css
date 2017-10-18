@@ -1,0 +1,140 @@
+body {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Merriweather', serif;
+    font-size: small;
+}
+
+h1,h2,h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    background: #084594;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+}
+
+h2 {
+    background: #084594;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    color: white;
+}
+
+h3 {
+    color: #084594;
+}
+
+
+.quote {
+    color: #2171b5;
+    font-style: italic;
+    font-size: medium;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.information {
+}
+
+.block {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.caption {
+    font-size: smaller;
+    margin-bottom:1%;
+}
+
+.right {
+    padding-right: 20%;
+}
+
+table {
+    align-self: center;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+path {
+    stroke-width: 1px;
+    stroke: white;
+}
+
+.vis-title {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background: #4292c6;
+    font-size: large;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.axis {
+    stroke-width: 0px;
+    fill: #084594;
+}
+
+.x-label,.y-label {
+    fill: #084594;
+}
+
+
+/* FROM HW 5 */
+/*********************/
+/*  TOOLTIP OVERLAY  */
+/*********************/
+
+.tooltip-title {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.d3-tip {
+    line-height: 1;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}
+
+.country:hover {
+    opacity: .6;
+}
+
+.country-circ:hover {
+    stroke: black;
+    stroke-width: 2px;
+}

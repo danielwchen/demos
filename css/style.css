@@ -1,0 +1,204 @@
+/* YOUR CSS STYLES */
+/* Pokemon colors from https://designpieces.com/palette/pokemon-logo-color-palette-hex-and-rgb/ */
+@font-face {
+    font-family: Generica;
+    src: url("../fonts/Generica.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Generica;
+    font-weight: bold;
+    src: url("../fonts/Generica Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Pokemon;
+    src: url("../fonts/Pokemon Hollow.ttf") format("opentype");
+}
+
+body {
+  font-family: Georgia;
+  background-color: #2a75bb;
+  font-size: 16px;
+}
+.interlude {
+  width: 80%;
+  margin: 50px auto 50px auto;
+  color: white;
+  text-align: center;
+}
+
+label {
+  font-size: 20px;
+}
+
+h1{
+  margin: 50px auto 0px auto;
+  text-align: center;
+  font-family: Generica;
+  font-weight: bold;
+  font-size: 50px;
+  color: #ffcb05;
+  text-shadow: 0px 0px 4px #c7a008; 
+}
+
+#pokemon {
+  font-family: Pokemon;
+  font-size: 70px;
+}
+
+.textlabels {
+  font-size: 14px;
+  font-family: Times; 
+}
+
+.d3-tip {
+  line-height: 1;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+}   
+
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+.d3-tip.n:after {
+  margin: -2px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+#vis {
+  margin: 10px auto 10px auto;
+  background-color: white;
+  border: 2px solid;
+  border-color: #3c5aa6;
+  box-shadow: 0 0 12px 3px #ffcb05;
+  border-radius: 40px;
+  min-height: 10px;
+}
+
+.dots:hover {
+  fill-opacity: .4;
+  stroke-opacity: 1;
+}
+
+.legend-rect:hover {
+  fill-opacity: .4;
+  stroke-opacity: 1;
+};
+
+.axis-label {
+  font: 11px sans-serif;
+}
+
+.legend-text {
+  font: 11px sans-serif;
+}
+
+.tick line{
+  opacity: 0.2;
+}
+
+form {
+    display: inline;
+}
+
+#forms {
+  width: 80%;
+  text-align: center;
+  margin: 0px auto 0px auto;
+}
+
+.interlude > img {
+    display: block;
+    margin: 0 auto;
+}
+
+.sprites {
+  /*width: 100px;*/
+  /*height: 100px;*/
+  text-align:center;
+}
+
+
+/* YOUR CSS STYLES */
+#container{
+  position: relative;
+  margin: 50px auto 0px auto;
+  width: 90%;
+  background-color: white;
+  box-shadow: 0 0 40px white;
+  border-radius: 40px;
+  border: 2px solid;
+  border-color: #3c5aa6;
+  box-shadow: 0 0 12px 3px #ffcb05;
+
+
+}
+
+#sections{
+  width: 80%;
+  margin: 0px auto;
+  padding-top: 30px;
+}
+
+#sections > div{
+  background: white;
+  padding: 10px;
+  border: 2px solid;
+  border-color: #3c5aa6;
+  border-radius: 25px;
+  width: 80%;
+  max-width: 800px;
+  margin: 0px auto 500px auto;
+  box-shadow: 0 0 12px 3px #ffcb05;
+  opacity: .8;
+  font-family: Georgia;
+}
+
+
+
+#sections > div:last-child{
+  margin-bottom: 100px;
+}
+#sections > div.graph-scroll-active{
+}
+
+
+#graph{
+  width: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+.graph-scroll-fixed #graph{
+  position: fixed;
+}
+
+.graph-scroll-below #graph{
+  bottom: 0px;
+  top: auto;
+}
+
+.mono{
+  font-family: monospace;
+}

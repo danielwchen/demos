@@ -5,7 +5,7 @@ var width = 700,
 
 
 // Load CSV file
-d3.csv("data/zaatari-refugee-camp-population.csv", function(data){
+d3.csv("Template4/data/zaatari-refugee-camp-population.csv", function(data){
 
 	var formatDate = d3.time.format("%b %Y");
 	// Convert value types

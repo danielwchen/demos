@@ -32,7 +32,7 @@ var data;
 
 // Load CSV file
 function loadData() {
-	d3.csv("data/fifa-world-cup.csv", function(error, csv) {
+	d3.csv("Template5/data/fifa-world-cup.csv", function(error, csv) {
 
 		csv.forEach(function(d){
 			// Convert string to 'date object'

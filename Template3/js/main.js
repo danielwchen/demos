@@ -1,4 +1,4 @@
-d3.csv("data/buildings.csv", function(data) {
+d3.csv("Template3/data/buildings.csv", function(data) {
     console.log(data);
 
     data = data.sort( function(a,b) {

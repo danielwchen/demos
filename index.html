@@ -19,9 +19,59 @@
   <a href="L5_1.html">L5.1</a>
   <a href="L6.html">L6</a>
   <a href="L7.html">L7</a>
-  <!-- <a href="L7_2.html">map</a> Could be used to show different projections-->
+  <!-- <a href="L7_2.html">map</a> Could be used to show different projections -->
   <a href="L8.html">L8</a>
   <!-- <a href="L9.html">L9</a> API doesn't work -->
   <a href="L10.html">L10</a>
+
+  <div id='vis-h2'>
+    <h1>Pizza Delivery Statistics</h1>
+    <br/>
+    <div class="user-control">
+      Area:
+      <select id="area-category" class="form-control" onchange="createVisualization()">
+        <option value="All">All</option>
+        <option value="Boston">Boston</option>
+        <option value="Cambridge">Cambridge</option>
+        <option value="Somerville">Somerville</option>
+      </select>
+      <br/>
+      Order Type:
+      <select id="order-category" class="form-control" onchange="createVisualization()">
+        <option value="All">All</option>
+        <option value="web">Web</option>
+        <option value="phone">Phone</option>
+      </select>
+    </div>
+    <br/>
+
+    <h2>Summary:</h2>
+    <div id="summary"></div>
+    <div id="chart-area"></div>
+    
+
+    <!-- Load JS libraries: jQuery, bootstrap, D3, D3 Tooltips -->
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/d3.min.js"></script>
+    <script src="js/libs/d3-tip.js"></script>
+
+    <!-- Completed: Data loading, bar chart rendering -->
+    <script src="js/h2/delivery-data.js"></script>
+    <script src="js/h2/feedback-data.js"></script>
+    <script src="js/h2/barchart.js"></script>
+
+    <!-- ****** TODO: FILTER DATA, DISPLAY BAR CHART & KEY FIGURES ****** -->
+    <script src="js/h2/main.js"></script>
+  </div>
+
+  <div id='vis-h3'></div>
+  <div id='vis-h4'></div>
+  <div id='vis-h5'></div>
+  <div id='vis-l4'></div>
+  <div id='vis-l5'></div>
+  <div id='vis-l6'></div>
+  <div id='vis-l7'></div>
+
 </body>
 </html>

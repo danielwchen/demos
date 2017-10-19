@@ -17,7 +17,7 @@ var force = d3.layout.force()
     .alpha(0.1);
 
 // Load data
-d3.json("data/airports.json", function(data) {
+d3.json("L7/data/airports.json", function(data) {
 
     console.log(data);
 

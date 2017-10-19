@@ -42,7 +42,7 @@ function loadData() {
 
 	// console.log("3");
 
-	d3.csv("data/coffee-house-chains.csv", function(error, csv) {
+	d3.csv("L5_2/data/coffee-house-chains.csv", function(error, csv) {
 
 		csv.forEach(function(d){
 			d.revenue = +d.revenue;

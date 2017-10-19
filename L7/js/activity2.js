@@ -4,8 +4,8 @@ var width = 1000,
 var data1, data2;
 
 queue()
-    .defer(d3.json, "data/world-110m.json")
-    .defer(d3.json, "data/airports.json")
+    .defer(d3.json, "L7/data/world-110m.json")
+    .defer(d3.json, "L7/data/airports.json")
     .await(createVisualization);
 
 function createVisualization(error,data1,data2) {

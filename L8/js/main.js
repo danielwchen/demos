@@ -6,8 +6,8 @@ var dateFormatter = d3.time.format("%Y-%m-%d");
 
 // (1) Load data asynchronously
 queue()
-	.defer(d3.json,"data/perDayData.json")
-	.defer(d3.json,"data/myWorldFields.json")
+	.defer(d3.json,"L8/data/perDayData.json")
+	.defer(d3.json,"L8/data/myWorldFields.json")
 	.await(createVis);
 
 

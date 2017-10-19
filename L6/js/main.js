@@ -16,7 +16,7 @@ var areachart, timeline;
 loadData();
 
 function loadData() {
-	d3.json("data/uk-household-purchases.json", function(error, jsonData){
+	d3.json("L6/data/uk-household-purchases.json", function(error, jsonData){
 		if(!error){
 			allData = jsonData;
 

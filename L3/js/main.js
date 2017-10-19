@@ -46,7 +46,7 @@
 //     // console.log(data);
 // });
 
-d3.csv("data/cities.csv", function(data) {
+d3.csv("L3/data/cities.csv", function(data) {
     var EUcities = data.filter( function (value, index) {
         return value.eu == "true";
     });

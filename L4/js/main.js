@@ -5,7 +5,7 @@ var width = 700,
 
 
 // Load CSV file
-d3.csv("data/wealth-health-2014.csv", function(data){
+d3.csv("L4/data/wealth-health-2014.csv", function(data){
 
     // Example data: Country:"Lesotho",Income:"2494",LifeExpectancy:"48.4",Population:"2109197",Region:"Sub-Saharan Africa"
 

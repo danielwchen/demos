@@ -11,7 +11,7 @@ loadData();
 function loadData() {
 
 	// Proxy url
-	var proxy = 'http://michaeloppermann.com/proxy.php?format=xml&url=';
+	var proxy = 'https://michaeloppermann.com/proxy.php?format=xml&url=';
 
     // Hubway XML station feed
     var url = 'https://www.thehubway.com/data/stations/bikeStations.xml';

@@ -79,7 +79,7 @@ for(var i = 0; i < 16; i++) {
 }
 
 queue()
-    .defer(d3.csv, "data/florentine-familiy-attributes.csv")
+    .defer(d3.csv, "L10/data/florentine-familiy-attributes.csv")
     .await(function(error, families){
 
         // --> PROCESS DATA

@@ -10,12 +10,17 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a href="index2.html">2</a>
+
+    <!-- Load JS libraries: jQuery, bootstrap, D3, D3 Tooltips -->
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/d3.min.js"></script>
+    <script src="js/libs/d3-tip.js"></script>
+
   <a href="index3.html">3</a>
   <a href="index4.html">4</a>
   <a href="index5.html">5</a>
   <!-- <a href="index6.html">6</a> Incomplete -->
-  <a href="L4.html">L4</a>
   <a href="L5_1.html">L5.1</a>
   <a href="L6.html">L6</a>
   <a href="L7.html">L7</a>
@@ -23,5 +28,76 @@
   <a href="L8.html">L8</a>
   <!-- <a href="L9.html">L9</a> API doesn't work -->
   <a href="L10.html">L10</a>
+<<<<<<< HEAD
+=======
+
+  <div id='vis-h2'>
+    <h1>Pizza Delivery Statistics</h1>
+    <br/>
+    <div class="user-control">
+      Area:
+      <select id="area-category" class="form-control" onchange="createVisualization()">
+        <option value="All">All</option>
+        <option value="Boston">Boston</option>
+        <option value="Cambridge">Cambridge</option>
+        <option value="Somerville">Somerville</option>
+      </select>
+      <br/>
+      Order Type:
+      <select id="order-category" class="form-control" onchange="createVisualization()">
+        <option value="All">All</option>
+        <option value="web">Web</option>
+        <option value="phone">Phone</option>
+      </select>
+    </div>
+    <br/>
+
+    <h2>Summary:</h2>
+    <div id="summary"></div>
+    <div id="chart-area"></div>
+    
+
+
+    <!-- Completed: Data loading, bar chart rendering -->
+    <script src="h2/js/delivery-data.js"></script>
+    <script src="h2/js/feedback-data.js"></script>
+    <script src="h2/js/barchart.js"></script>
+
+    <script src="h2/js/main.js"></script>
+  </div>
+
+  <div id='vis-h3'></div>
+  <div id='vis-h4'></div>
+  <div id='vis-h5'></div>
+
+  <div id='vis-l4'>
+    <div class="container">
+
+      <h1>Wealth and Health of Nations</h1>
+
+      <!-- Parent container for the scatterplot -->
+      <div id="l4-chart-area"></div>
+
+    </div>
+
+    <script src="l4/js/main.js"></script>
+  </div>
+  <div id='vis-l5'>
+
+    <h1>Coffee Shop - Queue Simulation</h1>
+
+    <!-- Parent container for the visualization -->
+    <div id="l5-chart-area"></div>
+
+    <!-- Your implementation -->
+    <script src="l5/js/main.js"></script>
+
+    <!-- Completed: generating order data -->
+    <script src="l5/js/data-generator.js"></script>
+  </div>
+  <div id='vis-l6'></div>
+  <div id='vis-l7'></div>
+
+>>>>>>> 3232fb0116a606349f55ceeaffd1e25b6358dfb7
 </body>
 </html>

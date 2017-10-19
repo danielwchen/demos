@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CS171 - HW2</title>
+
+		<!-- Load CSS libraries -->
+		<link rel="stylesheet" href="Template2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="Template2/css/style.css">
+	</head>
+	<body>
+
+	<h1>Pizza Delivery Statistics</h1>
+	<br/>
+	<div class="user-control">
+		Area:
+		<select id="area-category" class="form-control" onchange="createVisualization()">
+			<option value="All">All</option>
+			<option value="Boston">Boston</option>
+			<option value="Cambridge">Cambridge</option>
+			<option value="Somerville">Somerville</option>
+		</select>
+		<br/>
+		Order Type:
+		<select id="order-category" class="form-control" onchange="createVisualization()">
+			<option value="All">All</option>
+			<option value="web">Web</option>
+			<option value="phone">Phone</option>
+		</select>
+	</div>
+	<br/>
+
+	<h2>Summary:</h2>
+	<div id="summary"></div>
+	<div id="chart-area"></div>
+	
+
+	<!-- Load JS libraries: jQuery, bootstrap, D3, D3 Tooltips -->
+	<script src="Template2/js/jquery.min.js"></script>
+	<script src="Template2/js/bootstrap.min.js"></script>
+	<script src="Template2/js/d3.min.js"></script>
+	<script src="Template2/js/d3-tip.js"></script>
+
+	<!-- Completed: Data loading, bar chart rendering -->
+	<script src="Template2/js/delivery-data.js"></script>
+	<script src="Template2/js/feedback-data.js"></script>
+	<script src="Template2/js/barchart.js"></script>
+
+	<!-- ****** TODO: FILTER DATA, DISPLAY BAR CHART & KEY FIGURES ****** -->
+	<script src="Template2/js/main.js"></script>
+	</body>
+</html>

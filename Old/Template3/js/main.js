@@ -81,7 +81,7 @@ d3.csv("Template3/data/buildings.csv", function(data) {
 });
 
 function updateDisplay(d) {
-    document.getElementById("building-image").innerHTML = "<img src=\"Template3/img/" + d.image + "\" width='80%'>";
+    document.getElementById("building-image").innerHTML = "<img src=\"img/" + d.image + "\" width='80%'>";
     document.getElementById("building-name").innerHTML = d.building.toString();
     document.getElementById("height").innerHTML = d.height_m.toString();
     document.getElementById("city").innerHTML = d.city.toString();

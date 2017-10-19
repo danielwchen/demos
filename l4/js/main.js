@@ -20,7 +20,7 @@ d3.csv("l4/data/wealth-health-2014.csv", function(data){
         return b.Population - a.Population;
     });
 
-    var svg = d3.select("#chart-area").append("svg")
+    var l4_svg = d3.select("#l4-chart-area").append("svg")
         .attr("width", 1000)
         .attr("height", 1000);
 
@@ -51,7 +51,7 @@ d3.csv("l4/data/wealth-health-2014.csv", function(data){
 
     // var group = svg.append("g");
 
-    svg.selectAll("circle")
+    l4_svg.selectAll("circle")
         .data(data)
         .enter()
         .append("circle")
@@ -86,19 +86,19 @@ d3.csv("l4/data/wealth-health-2014.csv", function(data){
 
     yAxis.orient("left");
 
-    svg.append("g")
+    l4_svg.append("g")
         .attr("transform","translate(0,500)")
         .attr("class","axis x-axis")
         .call(xAxis);
 
-    svg.append("g")
+    l4_svg.append("g")
         .attr("transform","translate(30,0)")
         .attr("class","axis y-axis")
         .call(yAxis);
 
 
 
-    svg.append("text")
+    l4_svg.append("text")
         .attr("class", "x-label")
         .text( "Income per Person" )
         .attr("text-anchor","end")
@@ -109,7 +109,7 @@ d3.csv("l4/data/wealth-health-2014.csv", function(data){
     var testy = 40;
     var string = "rotate(90,"+testx.toString()+","+testy.toString()+")";
 
-    svg.append("text")
+    l4_svg.append("text")
         .attr("class", "y-label")
         .text( "Life Expectancy" )
         .attr("transform",string)

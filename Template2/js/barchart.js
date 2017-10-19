@@ -13,7 +13,7 @@ var margin = {top: 60, right: 20, bottom: 40, left: 80},
 width = width > 600 ? 600 : width;
 width = width < 400 ? 400 : width;
 
-var h4_svg = d3.select("#chart-area").append("svg")
+var svg = d3.select("#chart-area").append("svg")
 		.attr("width", width + margin.left + margin.right)
 		.attr("height", height + margin.top + margin.bottom)
 	.append("g")
@@ -41,10 +41,10 @@ var yAxis = d3.svg.axis()
 		.scale(y)
 		.orient("left");
 
-var xAxisGroup = h4_svg.append("g")
+var xAxisGroup = svg.append("g")
 		.attr("class", "x-axis axis");
 
-var yAxisGroup = h4_svg.append("g")
+var yAxisGroup = svg.append("g")
 	.attr("class", "y-axis axis");
 
 
@@ -106,9 +106,9 @@ function renderBarChart(data) {
 	yAxisGroup = svg.select(".y-axis")
 			.call(yAxis);
 
-	h4_svg.select("text.axis-title").remove();
+	svg.select("text.axis-title").remove();
 
-	h4_svg.append("text")
+	svg.append("text")
 		.attr("class", "axis-title")
 		.attr("x", -5)
 		.attr("y", -15)

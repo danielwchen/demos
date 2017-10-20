@@ -8,14 +8,13 @@ Vis10 = function(_parentElement, _formElement) {
   this.parentElement = _parentElement;
   this.formElement = _formElement;
 
-  vis.countryDataCSV;
-  vis.countries;
+  this.countryDataCSV;
+  this.countries;
 
   this.initVis();
 };
 
 Vis10.prototype.initVis = function() {
-
   var vis = this;
 
   queue()

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Visualization Demos</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>Vertical Bar Chart with Tooltip</h1>
+  <div id='vis-1'></div>
+
+  <h1>Horizontal Bar Chart with Table</h1>
+  <div id='vis-2'></div>
+
+  <h1>Area Chart with Guideline</h1>
+  <div id='vis-3'></div>
+
+  <h1>Line Graph with Clickable Points</h1>
+  <div id='vis-4'></div>
+
+  <h1>Scatterplot</h1>
+  <div id='vis-5'></div>
+
+  <h1>Stacked Area Chart with Selectable Region</h1>
+  <div id='vis-6'></div>
+
+  <h1>Force-Directed Graph</h1>
+  <div id='vis-7'></div>
+
+  <h1>Chart with Zoom and Selection</h1>
+  <div id='vis-8'></div>
+
+  <h1>Custom Graph</h1>
+  <div id='vis-9'></div>
+
+  <h1>Clorapleth Map</h1>
+  <form class="form-inline" id="vis-10-form">
+    <div class="form-group">
+      <label for="rankingType">Show Information: </label>
+      <select class="form-control" id="africa-select">
+        <option value="water">Drinking Water</option>
+        <option value="water2">Drinking Water (scaled)</option>
+        <option value="sanitation">Sanitation Facilities</option>
+        <option value="population">Population</option>
+      </select>
+    </div>
+  </form>
+  <div id='vis-10'></div>
+
+
+  <!-- JS Libraries -->
+  <script src="mt/js/jquery.min.js"></script>
+  <script src="mt/js/bootstrap.min.js"></script>
+  <script src="mt/js/queue.min.js"></script>
+  <script src="mt/js/topojson.js"></script>
+  <script src="mt/js/d3.min.js"></script>
+  <script src="mt/js/d3.tip.js"></script>
+  <script src="mt/js/d3-legend.min.js"></script>
+
+
+  <!-- vis-10 -->
+  <script src="mt/js/vis-choropleth.js"></script>
+  <script src="mt/js/vis-second.js"></script>
+  <script src="mt/js/legend.js"></script>
+
+
+</body>
+</html>

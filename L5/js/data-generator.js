@@ -8,7 +8,7 @@ var products = [
 ];
 
 newOrder();
-setTimeout(processOrder, 3000);
+setTimeout(processOrder, 1000);
 
 function newOrder() {
 	for(var i = 0; i < randomNumber(1,3); i++) {

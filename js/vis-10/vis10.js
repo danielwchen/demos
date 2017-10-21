@@ -154,7 +154,7 @@ Vis10.prototype.updateVis = function() {
   });
 
   /* Invoke the tip in the context of your visualization */
-  vis.svg.call(tip);
+  vis.svg.call(vis.tip);
 
   vis.map = vis.svg.selectAll("path")
   .data(vis.countries);

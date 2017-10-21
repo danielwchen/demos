@@ -90,7 +90,7 @@ Vis10.prototype.createVis = function() {
 
   vis.projection = d3.geo.mercator()
   .scale([300])
-  .translate([width / 2, height / 2]);
+  .translate([vis.width / 2, vis.height / 2]);
 
   vis.path = d3.geo.path()
   .projection(vis.projection);

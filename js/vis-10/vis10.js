@@ -20,11 +20,13 @@ Vis10.prototype.initVis = function() {
   queue()
   .defer(d3.json, "data/vis-10/africa.topo.json")
   .defer(d3.csv, "data/vis-10/global-water-sanitation-2015.csv")
-  .await(vis.wrangleData(error, mapTopJson, fullCountryDataCSV));
+  .await(function(error, mapTopJson, fullCountryDataCSV) {
+    vis.wrangleData(mapTopJson, fullCountryDataCSV)
+  });
 
 };
 
-Vis10.prototype.wrangleData = function(error, mapTopJson, fullCountryDataCSV) {
+Vis10.prototype.wrangleData = function(mapTopJson, fullCountryDataCSV) {
   var vis = this;
 
   vis.countryDataCSV = fullCountryDataCSV.filter(function(d){ return d.WHO_region == "African" || d.WHO_region == "Eastern Mediterranean"; });

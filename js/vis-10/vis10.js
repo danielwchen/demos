@@ -20,7 +20,7 @@ Vis10.prototype.initVis = function() {
   queue()
   .defer(d3.json, "data/vis-10/africa.topo.json")
   .defer(d3.csv, "data/vis-10/global-water-sanitation-2015.csv")
-  .await(wrangleData(error, mapTopJson, fullCountryDataCSV));
+  .await(vis.wrangleData(error, mapTopJson, fullCountryDataCSV));
 
 };
 
@@ -95,7 +95,7 @@ Vis10.prototype.createVis = function() {
 
   d3.select(vis.formElement)
   .on("change", function() {
-    updateChoropleth();
+    vis.updateVis();
   });
 
   vis.updateVis();

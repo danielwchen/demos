@@ -116,6 +116,8 @@ Vis10.prototype.updateVis = function() {
   }
   vis.pop.domain([180000,190000000]);
 
+  console.log(d3.select(vis.formElement).property("value") == "water");
+
   if (d3.select(vis.formElement).property("value") == "water") {
     document.getElementById(vis.titleElement).innerHTML = "Population without Improved Drinking Water Sources (%)";
   } else if (d3.select(vis.formElement).property("value") == "water2") {

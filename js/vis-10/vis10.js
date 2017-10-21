@@ -4,9 +4,10 @@
  *  @param _eventHandler    -- Event handler
  */
 
-Vis10 = function(_parentElement, _formElement) {
+Vis10 = function(_parentElement, _formElement, _titleElement) {
   this.parentElement = _parentElement;
   this.formElement = _formElement;
+  this.titleElement = _titleElement;
 
   this.countryDataCSV;
   this.countries;
@@ -116,13 +117,13 @@ Vis10.prototype.updateVis = function() {
   vis.pop.domain([180000,190000000]);
 
   if (d3.select(vis.formElement).property("value") == "water") {
-    document.getElementById("africa-title").innerHTML = "Population without Improved Drinking Water Sources (%)";
+    document.getElementById(vis.titleElement).innerHTML = "Population without Improved Drinking Water Sources (%)";
   } else if (d3.select(vis.formElement).property("value") == "water2") {
-    document.getElementById("africa-title").innerHTML = "Population without Improved Drinking Water Sources (% scaled to worst)";
+    document.getElementById(vis.titleElement).innerHTML = "Population without Improved Drinking Water Sources (% scaled to worst)";
   } else if (d3.select(vis.formElement).property("value") == "sanitation") {
-    document.getElementById("africa-title").innerHTML = "Population without Improved Sanitation Facilities (%)";
+    document.getElementById(vis.titleElement).innerHTML = "Population without Improved Sanitation Facilities (%)";
   } else {
-    document.getElementById("africa-title").innerHTML = "Population";
+    document.getElementById(vis.titleElement).innerHTML = "Population";
   }
 
 

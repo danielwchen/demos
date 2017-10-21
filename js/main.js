@@ -1,1 +1,1 @@
-vis10 = new Vis10("#vis-10", "#vis-10-form");
+vis10 = new Vis10("#vis-10", "#vis-10-form", "#vis-10-title");

@@ -116,15 +116,15 @@ Vis10.prototype.updateVis = function() {
   }
   vis.pop.domain([180000,190000000]);
 
-  // if (d3.select(vis.formElement).property("value") == "water") {
-  //   document.getElementById(vis.titleElement).innerHTML = "Population without Improved Drinking Water Sources (%)";
-  // } else if (d3.select(vis.formElement).property("value") == "water2") {
-  //   document.getElementById(vis.titleElement).innerHTML = "Population without Improved Drinking Water Sources (% scaled to worst)";
-  // } else if (d3.select(vis.formElement).property("value") == "sanitation") {
-  //   document.getElementById(vis.titleElement).innerHTML = "Population without Improved Sanitation Facilities (%)";
-  // } else {
-  //   document.getElementById(vis.titleElement).innerHTML = "Population";
-  // }
+  if (d3.select(vis.formElement).property("value") == "water") {
+    document.getElementById(vis.titleElement).innerHTML = "Population without Improved Drinking Water Sources (%)";
+  } else if (d3.select(vis.formElement).property("value") == "water2") {
+    document.getElementById(vis.titleElement).innerHTML = "Population without Improved Drinking Water Sources (% scaled to worst)";
+  } else if (d3.select(vis.formElement).property("value") == "sanitation") {
+    document.getElementById(vis.titleElement).innerHTML = "Population without Improved Sanitation Facilities (%)";
+  } else {
+    document.getElementById(vis.titleElement).innerHTML = "Population";
+  }
 
 
   vis.tip = d3.tip().attr('class', 'd3-tip').offset([-10,0]).html(function(d) {

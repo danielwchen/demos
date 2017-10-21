@@ -40,9 +40,9 @@ Vis10.prototype.wrangleData = function(mapTopJson, fullCountryDataCSV) {
     var dataPop = parseFloat(vis.countryDataCSV[i].UN_Population);
 
     //Find the corresponding state inside the GeoJSON
-    for (var j = 0; j < countries.length; j++) {
+    for (var j = 0; j < vis.countries.length; j++) {
 
-      var jsonCountry = countries[j].properties.adm0_a3_is;
+      var jsonCountry = vis.countries[j].properties.adm0_a3_is;
 
       if (dataCountry == jsonCountry) {
 

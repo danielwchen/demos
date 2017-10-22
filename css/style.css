@@ -12,8 +12,7 @@
 }
 
 .country:hover {
-    opacity: .6;
-    stroke: black;
+    opacity: .8;
 }
 
 /*********************/
@@ -32,6 +31,7 @@
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
     border-radius: 2px;
+    text-align: center;
 }
 
 /* Creates a small triangle extender for the tooltip */

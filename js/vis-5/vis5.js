@@ -84,7 +84,7 @@ Vis5.prototype.updateVis = function() {
   vis.svg.call(vis.tip);
 
   vis.svg.selectAll("circle")
-  .data(data)
+  .data(vis.data)
   .enter()
   .append("circle")
   .attr("class", "country-circ")

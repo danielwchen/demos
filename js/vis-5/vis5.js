@@ -21,27 +21,28 @@ Vis5.prototype.initVis = function() {
   vis.width = 790 - vis.margin.left - vis.margin.right;
   vis.height = 565 - vis.margin.top - vis.margin.bottom;
 
+  queue()
+  .defer(d3.csv, "data/vis-5/global-water-sanitation-2015.csv")
+  .await(function(error, csv) {
+    vis.wrangleData(csv)
+  });
 }
 
-Vis5.prototype.wrangleData = function(mapTopJson, fullCountryDataCSV) {
+Vis5.prototype.wrangleData = function(csv) {
   var vis = this;
 
-  d3.csv("mt/data/global-water-sanitation-2015.csv", function(error, csv) {
+  csv = csv.filter(function(d) { return d.Improved_Sanitation_2015 != "NA" && d.Improved_Water_2015 != "NA" })
 
-    csv = csv.filter(function(d) { return d.Improved_Sanitation_2015 != "NA" && d.Improved_Water_2015 != "NA" })
-
-    csv.forEach(function(country) {
-      country.Improved_Sanitation_2015 = 100 - country.Improved_Sanitation_2015;
-      country.Improved_Water_2015 = 100 - country.Improved_Water_2015;
-      country.UN_Population = +country.UN_Population;
-    });
-
-    csv.sort(function(a,b) {
-      return b.UN_Population - a.UN_Population;
-    });
-
-    vis.data = csv;
+  csv.forEach(function(country) {
+    country.Improved_Sanitation_2015 = 100 - country.Improved_Sanitation_2015;
+    country.Improved_Water_2015 = 100 - country.Improved_Water_2015;
+    country.UN_Population = +country.UN_Population;
   });
+
+  csv.sort(function(a,b) {
+    return b.UN_Population - a.UN_Population;
+  });
+  vis.data = csv;
 
   vis.createVis();
 

@@ -50,9 +50,8 @@ Vis5.prototype.wrangleData = function(mapTopJson, fullCountryDataCSV) {
 Vis5.prototype.createVis = function() {
   var vis = this;
 
-
   // Define 'svg' as a child-element (g) from the drawing area and include spaces
-  vis.svg = d3.select("#visualization").append("svg")
+  vis.svg = d3.select(vis.parentElement).append("svg")
   .attr("width", vis.width + vis.margin.left + vis.margin.right)
   .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
   .append("g")
@@ -62,7 +61,6 @@ Vis5.prototype.createVis = function() {
   vis.sanScale = d3.scale.linear().range([vis.margin.left,vis.width-vis.margin.right]);
   vis.popScale = d3.scale.linear().range([6,40]);
   vis.regScale = d3.scale.ordinal().range(["#1f78b4","#33a02c","#e31a1c","#ff7f00","#6a3d9a","#b15928"]);
-
 
   vis.updateVis();
 }

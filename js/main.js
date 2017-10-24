@@ -1,5 +1,5 @@
 vis5 = new Vis5("#vis-5-chart");
-// vis5legend = new Vis5Legend("#vis-5-legend");
+vis5legend = new Vis5Legend("#vis-5-legend");
 
 
 
